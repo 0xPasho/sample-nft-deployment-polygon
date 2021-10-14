@@ -23,6 +23,15 @@ After you get the CID, you'll create a file named metadata.json and then upload 
 ```
 Then copy again the CID but for the metadata.json file that you uploaded and put it in IPFS_NFT_CONFIG .env variable
 
+
+## Adapting solidity contract
+To be able to deploy the contract you'll need to update contracts/NFT.sol
+In line 12 you'll see a similar line:
+```
+    constructor() ERC721("<Your NFT Name>", "<Your NFT token Name>") {}
+```
+Update \<Your NFT Name> with the same name that you put in NFT_NAME in the .env, and for \<Your NFT token Name> update with the same name of COIN in .env 
+
 ## Setup .env 
 There's an environment file example in .env.example that has all the variables needed to make this service to work.
 

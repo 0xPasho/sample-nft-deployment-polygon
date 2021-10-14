@@ -9,7 +9,7 @@ contract TheTestNFT is ERC721, Ownable {
     Counters.Counter private _tokenIds;
     mapping(uint256 => string) private _tokenURIs;
 
-    constructor() ERC721("TheTestNFT", "TTNFT") {}
+    constructor() ERC721("<Your NFT Name>", "<Your NFT token Name>") {}
 
     function _setTokenURI(uint256 tokenId, string memory _tokenURI)
         internal

@@ -1,0 +1,21 @@
+{
+  "name": "sample-nft-in-polygon",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.js --network matic",
+    "distribute": "npx hardhat run scripts/distribute.js --network matic",
+    "mint": "npx hardhat run scripts/mint.js --network matic",
+    "log-token": "npx hardhat run scripts/getToken.js --network matic"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.6.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0"
+  }
+}
